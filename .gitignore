@@ -1,0 +1,15 @@
+node_modules
+dist
+build
+.env
+.DS_Store
+*.pyc
+__pycache__
+backend/venv
+backend/.env
+backend/chroma_db
+backend/sql_app.db
+*.log
+coverage
+.vscode
+.idea
