@@ -1,25 +1,23 @@
 # RecallAI: Privacy-First Personal Memory Assistant
 
-RecallAI is a powerful, privacy-focused application that acts as your "second brain." It allows you to ingest notes, conversations, and documents, and then uses advanced AI to let you query and chat with your own data.
+RecallAI is a privacy-focused application that acts as your "second brain." It allows you to ingest notes, conversations, and documents, and then uses AI to let you query and chat with your own data.
 
 **Key Philosophy:** Your data is yours. All memories are stored locally and encrypted. They are never shared with third parties or used to train public models.
 
-![Dashboard Preview](docs/dashboard-preview.png) *(Add a screenshot here later!)*
+## Features
 
-## 🚀 Features
-
-*   **📝 Smart Ingestion:** Upload text notes, meeting logs, or journals. Content is automatically chunked and embedded for semantic search.
-*   **🔍 Semantic Search:** Don't just match keywords. Ask questions in natural language (e.g., *"What did we discuss about the project timeline?"*) and get relevant answers.
-*   **🤖 AI-Powered Answers:** Uses `Llama-3` (via Groq) to generate concise, context-aware answers based strictly on your uploaded memories.
-*   **🔒 Privacy First:**
+*   **Smart Ingestion:** Upload text notes, meeting logs, or journals. Content is automatically chunked and embedded for semantic search.
+*   **Semantic Search:** Don't just match keywords. Ask questions in natural language (e.g., "What did we discuss about the project timeline?") and get relevant answers.
+*   **AI-Powered Answers:** Uses `Llama-3` (via Groq) to generate concise, context-aware answers based strictly on your uploaded memories.
+*   **Privacy First:**
     *   Local vector database (ChromaDB).
     *   No data sent to cloud storage providers.
     *   AI only sees the specific snippets relevant to your current question.
-*   **⚡ Modern Stack:** Built with React, Vite, TailwindCSS, FastAPI, and SQLAlchemy.
+*   **Modern Stack:** Built with React, Vite, TailwindCSS, FastAPI, and SQLAlchemy.
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **React (Vite)**: Fast, modern UI library.
@@ -36,7 +34,7 @@ RecallAI is a powerful, privacy-focused application that acts as your "second br
 
 ---
 
-## 🏁 Getting Started
+## Getting Started
 
 Follow these instructions to set up the project locally.
 
@@ -100,7 +98,7 @@ npm run dev
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 1.  **Sign Up/Login:** Create a new local account. Your data is isolated to your user ID.
 2.  **Add Memory:** Go to the "Add Memory" page. Paste in any text (e.g., "Meeting notes from today...").
@@ -109,7 +107,7 @@ npm run dev
 
 ---
 
-## 🛡️ Privacy & Security
+## Privacy & Security
 
 *   **Local Storage:** All vector data lives in `./backend/chroma_db` and user data in `./backend/sql_app.db`.
 *   **Encryption:** (Planned) Future updates will include at-rest encryption for the SQLite database.
@@ -117,7 +115,7 @@ npm run dev
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 1.  Fork the project.
@@ -128,6 +126,6 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
+## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
